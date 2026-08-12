@@ -1,9 +1,10 @@
 import { Container, Row, Col, Navbar } from 'react-bootstrap';
+import { CgShoppingCart } from 'react-icons/cg';
 
 export function Header() {
     return (
     <div className="App">
-      <Navbar className='nav'>
+      <Navbar className='navbar fixed-top bg-white'>
         <Container>
           <Row>
             <Col md={3}>
@@ -13,7 +14,7 @@ export function Header() {
             </Col>
 
             <Col md={6}>
-              <div  className='navbar-center'>
+              <div className='navbar-center'>
                 <a href='#Home'>Home</a>
                 <a href='#Products'>Products</a>
                 <a href='#Men'>Men</a>
@@ -24,8 +25,8 @@ export function Header() {
 
             <Col md={3}>
               <div className='navbar-right'>
-                <div>
-                    
+                <div className='cart-icon'>
+                    <CgShoppingCart></CgShoppingCart>
                 </div>
               </div>
             </Col>

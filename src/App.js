@@ -12,15 +12,20 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <HeroBanner></HeroBanner>
-        <div>
-          <div className="container">
-            {product.map((product, index) => (
-              <ProductCard key={index} product={product}></ProductCard>
+      <div className='content'>
+        <HeroBanner></HeroBanner>
+        <div className='body'>
+          <Row>
+            {product.map((item, index) => (
+              <Col md={4} key={index}>
+                <ProductCard product={item} />
+              </Col>
             ))}
-          </div>
+          </Row>
         </div>
-      <Footer></Footer>
+
+        <Footer></Footer>
+      </div>
     </div>
   );
 }
