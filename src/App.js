@@ -12,6 +12,7 @@ function App() {
   return (
     <div>
       <Header></Header>
+      
       <div className='content'>
         <HeroBanner></HeroBanner>
         <div className='body'>
